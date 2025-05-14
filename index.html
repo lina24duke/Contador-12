@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contador 12</title>
+        
+    </head>
+    <body>
+        <h1>Contador 12</h1>
+        <p></p>
+        <button onclick="aumentar()">mais</button>
+        <button onclick="diminuir()">menos</button>
+        <button onclick="reset()">reset</button>
+    <script>
+        let numero = 0
+
+        function reset() {
+            numero = 0
+            mostrarNaTela()
+        }
+        function aumentar() {
+            numero = numero + 5
+            mostrarNaTela()
+        }
+        function diminuir() {
+            numero = numero - 5
+          mostrarNaTela()  
+        }
+        function mostrarNaTela() {
+            const p = document.querySelector("p")
+            p.innerText = numero
+        }
+        mostrarNaTela()
+
+       
+    </script>    
+    </body>
+</html>
